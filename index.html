@@ -22,8 +22,9 @@
         type: 'get',
         url: "https://asdg.ggeoog.cn/index.php/index/csharedata/s/"+canshu+'/urls/'+urls,
         success: function (data) {
+            console.log(data);
             obj = JSON.parse(window.atob(data));
-            console.log(obj);
+            
         }
     });
     function getUrlParam(name) {
